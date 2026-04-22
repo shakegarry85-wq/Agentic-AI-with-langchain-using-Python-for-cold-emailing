@@ -9,9 +9,9 @@ from datetime import datetime, timedelta
 import pytz
 from langchain.agents import AgentType, initialize_agent
 from langchain.memory import ConversationBufferMemory
-from langchain.schema import SystemMessage
+from langchain_core.messages import SystemMessage
 from langchain_openai import ChatOpenAI
-from langchain.tools import Tool
+from langchain_core.tools import Tool
 
 from tools.email_tool import EmailTool, EmailConfig
 

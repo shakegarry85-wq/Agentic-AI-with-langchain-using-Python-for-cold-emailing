@@ -7,9 +7,9 @@ import logging
 from typing import Dict, Any, Optional
 from langchain.agents import AgentType, initialize_agent
 from langchain.memory import ConversationBufferMemory
-from langchain.schema import SystemMessage
+from langchain_core.messages import SystemMessage
 from langchain_openai import ChatOpenAI
-from langchain.tools import Tool
+from langchain_core.tools import Tool
 
 from prompts.email_writer_prompt import EmailWriterPrompts
 
